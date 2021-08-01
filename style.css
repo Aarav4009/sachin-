@@ -1,0 +1,34 @@
+.mp{color:white;}
+.mp{display:flex;
+justify-content: space-evenly;
+flex-wrap:wrap;}
+.ol{text-align: center;}
+.ol{color:white;}
+#o7{text-align:justify;}
+.e1{height:90vh;}
+.m1{color:white;}
+*{padding:0;
+margin:0;}
+.timeline{list-style:none;}
+.timeline li{position:relative;
+margin:0 auto;
+background:blue;
+padding-top:30 px;
+width:6px;}
+.timeline li div{position:relative;
+width:100px;
+transition:all 0.5s ease;}
+li:nth-child(odd) div{
+    background-color: red;
+    left: -150px;
+}
+li:nth-child(even) div{
+    background-color:blue;
+    left:115px;
+}
+li:nth-child(odd) div:hover{
+    transform:translate(200px);
+}
+li:nth-child(even) div:hover{
+    transform:translate(-200px);
+}
