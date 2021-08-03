@@ -9,26 +9,59 @@ flex-wrap:wrap;}
 .m1{color:white;}
 *{padding:0;
 margin:0;}
-.timeline{list-style:none;}
-.timeline li{position:relative;
-margin:0 auto;
-background:blue;
-padding-top:30 px;
-width:6px;}
-.timeline li div{position:relative;
-width:100px;
-transition:all 0.5s ease;}
-li:nth-child(odd) div{
-    background-color: red;
-    left: -150px;
+
+
+.timeline{
+  background:linear-gradient(blue,red,pink) ;
 }
-li:nth-child(even) div{
-    background-color:blue;
-    left:115px;
+
+
+.timeline ul{
+  list-style:none;
 }
-li:nth-child(odd) div:hover{
-    transform:translate(200px);
+
+.timeline ul li 
+{
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
 }
-li:nth-child(even) div:hover{
-    transform:translate(-200px);
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
 }
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+  transform: translate3d(-200px, 0, 0);
+}
+
+
+.timeline ul li div 
+{
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li.in-view div 
+{
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.background{background:url(https://tse2.mm.bing.net/th?id=OIP.WEwDmI4_qrD8nvgIxHI0UgHaFj&pid=Api&P=0&w=209&h=157);
+background-size: cover;}
